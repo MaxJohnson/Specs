@@ -1,7 +1,8 @@
-source "http://rubygems.org"
+# frozen_string_literal: true
 
-# For now use master
-# gem 'cocoapods', ">= #{YAML.load_file(File.dirname(__FILE__) + "/CocoaPods-version.yml")['last']}"
-gem "cocoapods-core", :git => "git://github.com/CocoaPods/Core.git", :branch => 'master'
-gem "cocoapods",      :git => "git://github.com/CocoaPods/CocoaPods.git", :branch => 'master'
-gem 'rake'
+source 'https://rubygems.org'
+
+ruby '> 2.0.0'
+
+gem 'cocoapods', '~> 1.9'
+gem 'rubocop'
